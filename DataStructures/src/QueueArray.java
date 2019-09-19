@@ -1,19 +1,25 @@
-package BankingCashCounter;
+package datastructures;
 
-public class Queue {
+
+
+public class QueueArray {
+
 
 	int n = 10;
-	int array[] = new int[n];
+	 
+      Person[] array = new Person[n];
 	int front = 0;
 	int rear = 0;
 	
-	public void enqueue(int data) 
+	
+	
+	public void enqueue(Person data) 
 	{
-		array[rear] = data;
+		array[rear] = (Person) data;
 		rear++;
 	}
 	
-	public int dequeue() 
+	public Person dequeue() 
 	{
 		return array[front++];
 	}
@@ -44,4 +50,6 @@ public class Queue {
 			return false;
 		}
 	}
+	
+	
 }

@@ -1,24 +1,29 @@
-package BalancedParenthesis;
+package datastructures;
 
 import java.util.Scanner;
 
-public class Main {
+
+
+public class BalancedParenthesis {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
+		
 		System.out.println(check());
-	
+		
 
 	}
 	
 	public static boolean check() 
 	{
 		
-		Stack stack = new Stack();
+		StackArray stack = new StackArray();
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the Expression to be Checked: ");
 		String str = scan.next();
 	    int len = str.length();
+	    
 	    for(int i=0;i<len;i++) 
 	    {
 	    	if(str.charAt(i)=='(') 
@@ -43,6 +48,9 @@ public class Main {
 	    	return false;
 	    	
 	    }
+	
+
+
 	}
 
 }

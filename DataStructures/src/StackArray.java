@@ -1,18 +1,20 @@
-package BalancedParenthesis;
+package datastructures;
 
-public class Stack {
- 
+public class StackArray {
+
+	
 	int n = 10; 
 	int array[] = new int[10];
 	int top = -1;
 	
-	
+	// push into the stack
 	public void push(int data) 
 	{
 		array[++top] = data;
 		
 	}
 	
+	// pop from the stack
 	public int pop() 
 	{
 		if(isEmpty()) 
@@ -28,6 +30,7 @@ public class Stack {
 		}
 	}
 	
+	// check whether stack is empty
 	public boolean isEmpty() 
 	{
 		if(top == -1) 
@@ -40,6 +43,7 @@ public class Stack {
 		}
 	}
 	
+	// returns the peek of stack
 	public int peek() 
 	{
 		return array[top];
@@ -50,6 +54,7 @@ public class Stack {
 		return top+1;
 	}
 	
+	// print all elements in FILO manner
 	public void show() 
 	{
 		for(int i=0;i<=top;i++) 
