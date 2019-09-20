@@ -1,17 +1,14 @@
 package datastructures;
 
-import java.util.Arrays;
+import datastructures.utility.Utility;
 
 public class AnagramInQueue {
 
-	static Queue<Integer> q =  new Queue();
-	static int array[] = Utility.findAnagram();
+	static Queue<Integer> q =  new Queue<>();
+	static int array[] = Utility.findAnagram(true);
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		
-		
-		
 		for(int i=0;i<array.length;i++) 
 		{
 			q.enqueue(array[i]);

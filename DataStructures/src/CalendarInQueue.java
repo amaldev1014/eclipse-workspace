@@ -2,6 +2,8 @@ package datastructures;
 
 import java.util.Scanner;
 
+import datastructures.utility.Utility;
+
 public class CalendarInQueue {
 
 	static Queue<Integer> queue = new Queue();
@@ -76,7 +78,11 @@ public class CalendarInQueue {
 			System.out.print(" ");
 			for(int j=0;j<7;j++) 
 			{
-				System.out.print(queue.dequeue()+"\t");
+				if(!queue.isEmpty()) {
+				String val = Integer.toString(queue.dequeue());
+				
+				System.out.print(val+"\t");
+				}
 			}
 			System.out.println();
 		}

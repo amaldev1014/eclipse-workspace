@@ -3,9 +3,9 @@ package jsonDdatamanagement;
 import java.io.File;
 import java.io.IOException;
 
-import org.codehaus.jackson.JsonParseException;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
+import sun.jvm.hotspot.runtime.ObjectMonitor;
+
+
 
 public class Mapping {
 
@@ -26,7 +26,7 @@ public class Mapping {
 			System.out.println("not created");
 		}
 
-		ObjectMapper map = new ObjectMapper();
+		ObjectMapper 
 		Inventory invent = null;
 		
 		try {

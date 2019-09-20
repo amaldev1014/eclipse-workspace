@@ -2,9 +2,11 @@ package datastructures;
 
 import java.util.Arrays;
 
+import datastructures.utility.Utility;
+
 public class AnagramInStack {
-	static Stack<Integer> stack = new Stack();
-	static int array[] = Utility.findAnagram();
+	static StackArray stack = new StackArray();
+	static int array[] = Utility.findAnagram(true);
 	
 
 	public static void main(String args[]) 

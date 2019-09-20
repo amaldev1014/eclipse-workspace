@@ -1,14 +1,13 @@
-package datastructures;
+package src;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
+public class demo {
 
-
-
-public class UnOrderedList {
+	
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -20,14 +19,13 @@ public class UnOrderedList {
 		list.add(names[i]);
 		}
 		
-     	list.add("vignesh");
-//		
-//		list.add("manchesh");
-//		
-//		list.search("amal");
-//		
+		list.add("vignesh");
+		
+		list.add("manchesh");
+		
+		list.search("amal");
+		
 	
-		list.search("antony");
 		list.search("antony");
 		list.show();
 	}
@@ -37,7 +35,7 @@ public class UnOrderedList {
 		
 		Scanner scan = null;
 		try {
-			scan = new Scanner(new File("ordered.txt"));
+			scan = new Scanner(new File("unordered.txt"));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -49,6 +47,5 @@ public class UnOrderedList {
 		}
 	   return names;
 	}
-	}
-
-
+	
+}

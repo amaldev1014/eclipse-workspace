@@ -2,10 +2,12 @@ package datastructures;
 
 import java.util.Scanner;
 
+import datastructures.utility.Utility;
+
 public class CalendarInStack {
 
-	static Stack<Integer> stack1 = new Stack();
-	static Stack<Integer> stack2 = new Stack();
+	static StackArray stack1 = new StackArray();
+	static StackArray stack2 = new StackArray();
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -44,7 +46,7 @@ public class CalendarInStack {
 		{
 			stack2.push(stack1.pop());
 		}
-		stack2.show();
+		
 		print();
 		
 	}

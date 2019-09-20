@@ -6,7 +6,7 @@ public class PowersOf2 {
 		// TODO Auto-generated method stub
       
 		int val = Integer.parseInt(args[0]);
-		if(Integer.parseInt(args[0])<31) {
+		if(Integer.parseInt(args[0])<31 && val>0) {
 		
 		System.out.println("Powers Of Two: ");
 		

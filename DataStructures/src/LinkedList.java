@@ -1,6 +1,11 @@
 package datastructures;
 
-
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class LinkedList<T> {
 
@@ -30,6 +35,8 @@ public class LinkedList<T> {
 			
 			n.next = node;
 		}
+		
+		
 		
 	}
 	// print  elements inside list
@@ -75,6 +82,8 @@ public class LinkedList<T> {
 			
 	}
 	
+	
+	
 	// search for an element and if found delete it else insert it
 	public void search(T data) 
 	{
@@ -95,4 +104,37 @@ public class LinkedList<T> {
 			add(data);
 		}
 	}
+	
+	
+	public void writeOnFile(String file, int[] array, int val) throws IOException {
+	
+	 BufferedWriter writer = new BufferedWriter( new FileWriter(file));
+	 for(int i=0;i<array.length;i++) {
+	 writer.write(Integer.toString(val));
+	 writer.flush();
+	 }
+     
+	
+	
+	 
+
+}
+	
+	 public static String[] readFromFile(String file) throws IOException 
+		{
+		 
+			Scanner scan = null;
+			try {
+				scan = new Scanner(new File(file));
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			    String numbers[] = null;
+			while(scan.hasNext()) 
+			{
+				numbers = scan.nextLine().split(" ");
+			}
+		   return numbers;
+		}
 }

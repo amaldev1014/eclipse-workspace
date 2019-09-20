@@ -27,19 +27,24 @@ public class Person {
 	
 	
 	public String toString() {
-		return "Person [name=" + name + ", balance=" + balance + "]";
+		return "Person name=" + name + ", balance=" + balance ;
 	}
 	
 	
-	public double withdraw(int amount) 
+	public double withdraw(double amount) 
 	{
 		balance = balance - amount;
 		return balance;
 	}
 	
-	public double deposit(int amount) 
+	public double deposit(double amount) 
 	{
 		balance = balance + amount;
 		return balance;
+	}
+	
+	public void print() 
+	{
+		toString();
 	}
 }

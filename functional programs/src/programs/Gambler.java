@@ -39,7 +39,7 @@ public class Gambler {
 	
 	System.out.println("percentage of win VS loss:");
 	System.out.println("win percentage : " + (win*100)/count);
-	System.out.println("loss percentage : " + (1+((count-win)*100)/count));
+	System.out.println("loss percentage : " + (((count-win)*100)/count));
 	
 	
 		

@@ -74,5 +74,7 @@ public class Queue<T> {
 		System.out.println(n.data);
 		
 	}
+	
+	
 
 }

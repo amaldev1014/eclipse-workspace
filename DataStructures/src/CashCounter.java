@@ -8,6 +8,9 @@ public class CashCounter {
 
 
 	static QueueArray queue = new QueueArray();
+	static QueueArray queue2 = new QueueArray();
+	
+	
 	public static void main(String args[]) {
 	
 	System.out.println("ENTER NUMBER OF PERSON ON QUEUE");
@@ -25,8 +28,38 @@ public class CashCounter {
 	
 	}
 	queue.show();
-	System.out.println(queue.dequeue());
-	System.out.println(queue.dequeue());
+	int count = queue.size();
+	while(count >0) {
+	
+	System.out.println("do you want to withdraw or deposit");
+	String what = scan.next();
+	
+	
+	
+	switch(what) 
+	{
+	
+	case "deposit" : 
+		System.out.println("Enter the amount to deposit");
+		double amount = scan.nextDouble();
+		queue.getFront().deposit(amount);
+		queue2.enqueue(queue.dequeue());
+		
+		break;
+	   
+	    
+	case "withdraw" :
+		System.out.println("Enter the amount to withdraw");
+		double mount = scan.nextDouble();
+		queue.getFront().withdraw(mount);
+		queue2.enqueue(queue.dequeue());
+	    break;
+	}
+	
+	count--;
+	}
+	
+	queue2.show();
 	}
 
 }

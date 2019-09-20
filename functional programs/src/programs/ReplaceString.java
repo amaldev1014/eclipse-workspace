@@ -11,8 +11,14 @@ public class ReplaceString {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the username: ");
 		String username = scan.next();
-	
-		System.out.println("Hello "+username+", How Are You");
+		
+	    String welcome = "Hello <<UserName>>, How Are You";
+	    if(username.length() < 3) 
+	    {
+	    	System.out.println("Please enter a string length greater than 3 ");
+	    }
+	  ;
+		System.out.println(welcome.replace("<<UserName>>", username));
 	}
 
 }

@@ -14,8 +14,9 @@ public class PrimeFactors {
 		
 	}
 	
-	public static void prime(int n) 
 	
+	
+	public static void prime(int n) 
 	{
 		/*while(n%2 == 0) 
 		{

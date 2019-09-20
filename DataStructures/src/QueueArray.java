@@ -51,5 +51,10 @@ public class QueueArray {
 		}
 	}
 	
+	public Person getFront() 
+	{
+		return array[front];
+	}
+	
 	
 }

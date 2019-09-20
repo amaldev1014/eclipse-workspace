@@ -4,7 +4,7 @@ public class StackArray {
 
 	
 	int n = 10; 
-	int array[] = new int[10];
+	int array[] = new int[500];
 	int top = -1;
 	
 	// push into the stack

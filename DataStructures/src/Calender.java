@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Scanner;
 
+import datastructures.utility.Utility;
+
 public class Calender {
 
 	static int calendar[][] = new int[6][7];
@@ -77,8 +79,10 @@ public class Calender {
 			System.out.print(" ");
 			for(int j=0;j<7;j++) 
 			{
+				if(calendar[i][j]!=0) {
 				System.out.print(calendar[i][j]+"\t");
-			}
+				}
+				}
 			System.out.println();
 		}
 	}
